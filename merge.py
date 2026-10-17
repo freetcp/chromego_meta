@@ -385,9 +385,9 @@ def write_healthy_subscription(
     healthy_links = validate_links(
         [link for name, link in proxy_links if name in healthy_names]
     )
-    if len(healthy_links) < 20:
+    if len(healthy_links) < 5:
         raise PipelineError(
-            f"{label}测活节点仅 {len(healthy_links)} 个，低于安全阈值 20；{output} 保持不变"
+            f"{label}测活节点仅 {len(healthy_links)} 个，低于安全阈值 5；{output} 保持不变"
         )
     old_healthy_count = existing_link_count(output)
     write_subscription(output, healthy_links)
