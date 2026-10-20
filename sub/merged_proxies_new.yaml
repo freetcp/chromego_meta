@@ -1,1 +1,285 @@
-
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  proxy-server-nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  fallback:
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+proxies:
+- name: mieru1-c1b755f2
+  type: mieru
+  server: 198.200.57.152
+  port: 33556
+  transport: TCP
+  username: Alvin9999-newpac
+  password: github.com/Alvin9999-newpac/fanqiang
+- name: mieru2-c17c422b
+  type: mieru
+  server: 157.254.223.43
+  port: 23456
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+- name: https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
+  type: hysteria
+  server: 5.83.129.143
+  port: 26691
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: github.com/Alvin9999-newpac/fanqiang-5e723059
+  type: hysteria
+  server: tw-25.497489.xyz
+  port: 10099
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: tw-25.497489.xyz
+  skip-cert-verify: false
+  alpn:
+  - h3
+  protocol: udp
+  up: 20 Mbps
+  down: 20 Mbps
+- name: github.com/Alvin9999-newpac/fanqiang-d66ff5e8
+  type: hysteria
+  server: 198.200.57.142
+  port: 22335
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: github.com/Alvin9999-newpac/fanqiang-08554c31
+  type: mieru
+  server: 198.200.57.152
+  port: 33556
+  transport: TCP
+  username: Alvin9999-newpac
+  password: github.com/Alvin9999-newpac/fanqiang
+  udp: true
+  multiplexing: MULTIPLEXING_LOW
+- name: https://github.com/Alvin9999-newpac/fanqiang-3730d1b0
+  type: hysteria
+  server: 62.210.70.191
+  port: 24667
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: github.com/Alvin9999-newpac/fanqiang-e0705058
+  type: hysteria
+  server: 163.172.117.163
+  port: 36699
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: github.com/Alvin9999-newpac/fanqiang-86efa44f
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: hysteria_urls:1-4875865c
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::3
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  up: 11 mbps
+  down: 55 mbps
+  hop-interval: 30
+- name: hysteria2_urls:1-a1ddda44
+  type: hysteria
+  server: 137.175.82.44
+  port: 443
+  auth-str: dongtaiwang.com
+  protocol: udp
+  up: 11
+  down: 55
+  sni: bing.com
+  skip-cert-verify: true
+  fast-open: true
+  alpn:
+  - h3
+  recv-window-conn: 57671680
+  recv-window: 230686720
+  disable_mtu_discovery: true
+- name: hysteria2_urls:3-4ce81303
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth-str: dongtaiwang.com
+  protocol: udp
+  up: 11
+  down: 55
+  sni: apple.com
+  skip-cert-verify: true
+  fast-open: true
+  alpn:
+  - h3
+  recv-window-conn: 57671680
+  recv-window: 230686720
+  disable_mtu_discovery: true
+- name: Alvin9999-newpac-1611bf3c
+  type: hysteria
+  server: 195.154.44.227
+  port: 55668
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  protocol: udp
+  up: 20
+  down: 20
+  sni: bing.com
+  skip-cert-verify: true
+  fast-open: false
+  alpn:
+  - h3
+- name: https://github.com/Alvin9999-newpac/fanqiang/wiki-b935c487
+  type: vless
+  server: 157.254.223.44
+  port: 18959
+  uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+  flow: ''
+  network: tcp
+  udp: true
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
+    short-id: d557c6895d014075
+- name: ss_urls:1-a677ff59
+  type: shadowquic
+  server: 198.2.214.27
+  port: 22448
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+  sni: www.bing.com
+  alpn:
+  - h3
+  zero-rtt: true
+  congestion-controller: bbr
+  udp-over-stream: false
+- name: ss_urls:2-f2ddb4bd
+  type: shadowquic
+  server: 142.249.37.83
+  port: 1443
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+  sni: www.yahoo.com
+  alpn:
+  - h3
+  zero-rtt: true
+  congestion-controller: bbr
+  udp-over-stream: false
+- name: proxy-1f1a8e63
+  type: vless
+  server: 2001:bc8:32d7:302::14
+  port: 37783
+  uuid: a289c660-1b12-432b-a06c-c2ae469272b0
+  network: xhttp
+  udp: true
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  reality-opts:
+    public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
+    short-id: 21569dd6
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 自动选择
+  - DIRECT
+  - mieru1-c1b755f2
+  - mieru2-c17c422b
+  - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
+  - github.com/Alvin9999-newpac/fanqiang-5e723059
+  - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
+  - github.com/Alvin9999-newpac/fanqiang-08554c31
+  - https://github.com/Alvin9999-newpac/fanqiang-3730d1b0
+  - github.com/Alvin9999-newpac/fanqiang-e0705058
+  - github.com/Alvin9999-newpac/fanqiang-86efa44f
+  - hysteria_urls:1-4875865c
+  - hysteria2_urls:1-a1ddda44
+  - hysteria2_urls:3-4ce81303
+  - Alvin9999-newpac-1611bf3c
+  - https://github.com/Alvin9999-newpac/fanqiang/wiki-b935c487
+  - ss_urls:1-a677ff59
+  - ss_urls:2-f2ddb4bd
+  - proxy-1f1a8e63
+- name: 自动选择
+  type: url-test
+  url: https://cp.cloudflare.com
+  interval: 300
+  tolerance: 50
+  proxies:
+  - mieru1-c1b755f2
+  - mieru2-c17c422b
+  - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
+  - github.com/Alvin9999-newpac/fanqiang-5e723059
+  - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
+  - github.com/Alvin9999-newpac/fanqiang-08554c31
+  - https://github.com/Alvin9999-newpac/fanqiang-3730d1b0
+  - github.com/Alvin9999-newpac/fanqiang-e0705058
+  - github.com/Alvin9999-newpac/fanqiang-86efa44f
+  - hysteria_urls:1-4875865c
+  - hysteria2_urls:1-a1ddda44
+  - hysteria2_urls:3-4ce81303
+  - Alvin9999-newpac-1611bf3c
+  - https://github.com/Alvin9999-newpac/fanqiang/wiki-b935c487
+  - ss_urls:1-a677ff59
+  - ss_urls:2-f2ddb4bd
+  - proxy-1f1a8e63
+rules:
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,节点选择
