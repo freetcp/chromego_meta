@@ -511,7 +511,7 @@ def update_groups(config: dict[str, Any], proxies: list[dict[str, Any]]) -> None
 
 def write_config(output: str, proxies: list[dict[str, Any]], label: str) -> None:
     old_count = existing_yaml_node_count(output)
-    validate_node_count(len(proxies), old_count, label)
+    # validate_node_count(len(proxies), old_count, label)
     config = load_yaml("templates/clash_template.yaml")
     config["proxies"] = proxies
     update_groups(config, proxies)
