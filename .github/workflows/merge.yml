@@ -44,20 +44,6 @@ jobs:
       - name: Build Mihomo subscription
         run: python meta_merge.py
 
-      - name: Health-check nodes for base64 subscription
-        run: |
-          python check_nodes.py --mihomo ./mihomo \
-            --healthy-output "$RUNNER_TEMP/healthy_nodes.json"
-          python check_nodes.py --mihomo ./mihomo \
-            --config sub/merged_proxies_new_2.yaml \
-            --healthy-output "$RUNNER_TEMP/healthy_nodes_2.json"
-
-      - name: Build full and health-checked base64 subscriptions
-        run: |
-          python merge.py \
-            --healthy-names "$RUNNER_TEMP/healthy_nodes.json" \
-            --complete-healthy-names "$RUNNER_TEMP/healthy_nodes_2.json"
-
       - name: Build sing-box subscription
         run: python sing-box.py
 
