@@ -67,7 +67,7 @@ def make_probe_config(config: dict[str, Any], directory: Path) -> Path:
     return path
 
 
-def wait_for_api(process: subprocess.Popen[str], timeout: float = 20) -> None:
+def wait_for_api(process: subprocess.Popen[str], timeout: float = 5) -> None:
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
         if process.poll() is not None:
@@ -169,7 +169,7 @@ def export_healthy_names(
         finally:
             process.terminate()
             try:
-                process.wait(timeout=10)
+                process.wait(timeout=5)
             except subprocess.TimeoutExpired:
                 process.kill()
                 process.wait(timeout=5)
