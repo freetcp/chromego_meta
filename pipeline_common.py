@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent
 USER_AGENT = "chromego-merge/2.0 (+https://github.com/yaney01/chromego_merge)"
 FETCH_ATTEMPTS = 3
 FETCH_TIMEOUT = 20
-MIN_NODES = 20
+MIN_NODES = 5
 MIN_RETAIN_RATIO = 0.5
 
 
