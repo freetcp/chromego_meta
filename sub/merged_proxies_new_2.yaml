@@ -87,9 +87,9 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   udp: true
   multiplexing: MULTIPLEXING_LOW
-- name: https://github.com/Alvin9999-newpac/fanqiang-3730d1b0
+- name: https://github.com/Alvin9999-newpac/fanqiang-e6f23027
   type: hysteria
-  server: 62.210.70.191
+  server: 62.210.28.175
   port: 24667
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -262,7 +262,7 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-5e723059
   - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
   - github.com/Alvin9999-newpac/fanqiang-08554c31
-  - https://github.com/Alvin9999-newpac/fanqiang-3730d1b0
+  - https://github.com/Alvin9999-newpac/fanqiang-e6f23027
   - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - hysteria_urls:1-1ff9d752
@@ -285,7 +285,7 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-5e723059
   - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
   - github.com/Alvin9999-newpac/fanqiang-08554c31
-  - https://github.com/Alvin9999-newpac/fanqiang-3730d1b0
+  - https://github.com/Alvin9999-newpac/fanqiang-e6f23027
   - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - hysteria_urls:1-1ff9d752
