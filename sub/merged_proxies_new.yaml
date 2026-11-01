@@ -54,18 +54,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: github.com/Alvin9999-newpac/fanqiang-5e723059
+- name: github.com/Alvin9999-newpac/fanqiang-e0705058
   type: hysteria
-  server: tw-25.497489.xyz
-  port: 10099
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: tw-25.497489.xyz
-  skip-cert-verify: false
+  server: 163.172.117.163
+  port: 36699
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
   protocol: udp
-  up: 20 Mbps
-  down: 20 Mbps
+  up: 11 Mbps
+  down: 55 Mbps
 - name: github.com/Alvin9999-newpac/fanqiang-d66ff5e8
   type: hysteria
   server: 198.200.57.142
@@ -87,22 +87,22 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   udp: true
   multiplexing: MULTIPLEXING_LOW
+- name: github.com/Alvin9999-newpac/fanqiang-5e723059
+  type: hysteria
+  server: tw-25.497489.xyz
+  port: 10099
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: tw-25.497489.xyz
+  skip-cert-verify: false
+  alpn:
+  - h3
+  protocol: udp
+  up: 20 Mbps
+  down: 20 Mbps
 - name: https://github.com/Alvin9999-newpac/fanqiang-e6f23027
   type: hysteria
   server: 62.210.28.175
   port: 24667
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: github.com/Alvin9999-newpac/fanqiang-e0705058
-  type: hysteria
-  server: 163.172.117.163
-  port: 36699
   auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
@@ -165,11 +165,11 @@ proxies:
   recv-window-conn: 57671680
   recv-window: 230686720
   disable_mtu_discovery: true
-- name: Alvin9999-newpac-1611bf3c
+- name: Alvin9999-newpac-a8f8c155
   type: hysteria
-  server: 195.154.44.227
-  port: 55668
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+  server: 137.175.82.43
+  port: 443
+  auth-str: dongtaiwang.com
   protocol: udp
   up: 20
   down: 20
@@ -240,16 +240,16 @@ proxy-groups:
   - mieru1-c1b755f2
   - mieru2-c17c422b
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
-  - github.com/Alvin9999-newpac/fanqiang-5e723059
+  - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
   - github.com/Alvin9999-newpac/fanqiang-08554c31
+  - github.com/Alvin9999-newpac/fanqiang-5e723059
   - https://github.com/Alvin9999-newpac/fanqiang-e6f23027
-  - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - hysteria_urls:1-4875865c
   - hysteria2_urls:1-a1ddda44
   - hysteria2_urls:3-4ce81303
-  - Alvin9999-newpac-1611bf3c
+  - Alvin9999-newpac-a8f8c155
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-b935c487
   - ss_urls:1-a677ff59
   - ss_urls:2-f2ddb4bd
@@ -263,16 +263,16 @@ proxy-groups:
   - mieru1-c1b755f2
   - mieru2-c17c422b
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
-  - github.com/Alvin9999-newpac/fanqiang-5e723059
+  - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
   - github.com/Alvin9999-newpac/fanqiang-08554c31
+  - github.com/Alvin9999-newpac/fanqiang-5e723059
   - https://github.com/Alvin9999-newpac/fanqiang-e6f23027
-  - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - hysteria_urls:1-4875865c
   - hysteria2_urls:1-a1ddda44
   - hysteria2_urls:3-4ce81303
-  - Alvin9999-newpac-1611bf3c
+  - Alvin9999-newpac-a8f8c155
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-b935c487
   - ss_urls:1-a677ff59
   - ss_urls:2-f2ddb4bd
