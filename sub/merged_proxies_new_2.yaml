@@ -42,6 +42,28 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
+- name: quic1-3aa4cfe5
+  type: shadowquic
+  server: 198.2.214.27
+  port: 22448
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+  sni: www.bing.com
+  alpn:
+  - h3
+  zero-rtt: true
+  congestion-control: bbr
+- name: quic2-ad460041
+  type: shadowquic
+  server: 142.249.37.83
+  port: 1443
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+  sni: www.yahoo.com
+  alpn:
+  - h3
+  zero-rtt: true
+  congestion-control: bbr
 - name: https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
   type: hysteria
   server: 5.83.129.143
@@ -258,6 +280,8 @@ proxy-groups:
   - DIRECT
   - mieru1-c1b755f2
   - mieru2-c17c422b
+  - quic1-3aa4cfe5
+  - quic2-ad460041
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
   - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
@@ -281,6 +305,8 @@ proxy-groups:
   proxies:
   - mieru1-c1b755f2
   - mieru2-c17c422b
+  - quic1-3aa4cfe5
+  - quic2-ad460041
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
   - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
