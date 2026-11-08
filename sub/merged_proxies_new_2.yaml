@@ -159,7 +159,23 @@ proxies:
   max-stream-receive-window: 16777216
   initial-connection-receive-window: 33554432
   max-connection-receive-window: 33554432
-- name: hysteria2_urls:1-a1ddda44
+- name: hysteria2_urls:1-302f8927
+  type: hysteria
+  server: 137.175.82.44
+  port: 20022
+  auth-str: dongtaiwang.com
+  protocol: udp
+  up: 11
+  down: 55
+  sni: bing.com
+  skip-cert-verify: true
+  fast-open: true
+  alpn:
+  - h3
+  recv-window-conn: 57671680
+  recv-window: 230686720
+  disable_mtu_discovery: true
+- name: hysteria2_urls:2-a1ddda44
   type: hysteria
   server: 137.175.82.44
   port: 443
@@ -191,10 +207,10 @@ proxies:
   recv-window-conn: 57671680
   recv-window: 230686720
   disable_mtu_discovery: true
-- name: Alvin9999-newpac-a8f8c155
+- name: Alvin9999-newpac-20b58836
   type: hysteria
   server: 137.175.82.43
-  port: 443
+  port: 20022
   auth-str: dongtaiwang.com
   protocol: udp
   up: 20
@@ -290,9 +306,10 @@ proxy-groups:
   - https://github.com/Alvin9999-newpac/fanqiang-e6f23027
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - hysteria_urls:1-1ff9d752
-  - hysteria2_urls:1-a1ddda44
+  - hysteria2_urls:1-302f8927
+  - hysteria2_urls:2-a1ddda44
   - hysteria2_urls:3-4ce81303
-  - Alvin9999-newpac-a8f8c155
+  - Alvin9999-newpac-20b58836
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-3cc8b11c
   - ss_urls:1-a677ff59
   - ss_urls:2-f2ddb4bd
@@ -315,9 +332,10 @@ proxy-groups:
   - https://github.com/Alvin9999-newpac/fanqiang-e6f23027
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - hysteria_urls:1-1ff9d752
-  - hysteria2_urls:1-a1ddda44
+  - hysteria2_urls:1-302f8927
+  - hysteria2_urls:2-a1ddda44
   - hysteria2_urls:3-4ce81303
-  - Alvin9999-newpac-a8f8c155
+  - Alvin9999-newpac-20b58836
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-3cc8b11c
   - ss_urls:1-a677ff59
   - ss_urls:2-f2ddb4bd
