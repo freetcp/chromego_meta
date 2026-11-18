@@ -159,9 +159,9 @@ proxies:
   max-stream-receive-window: 16777216
   initial-connection-receive-window: 33554432
   max-connection-receive-window: 33554432
-- name: hysteria2_urls:1-302f8927
+- name: hysteria2_urls:1-23c652f9
   type: hysteria
-  server: 137.175.82.44
+  server: 137.175.82.42
   port: 20022
   auth-str: dongtaiwang.com
   protocol: udp
@@ -175,9 +175,9 @@ proxies:
   recv-window-conn: 57671680
   recv-window: 230686720
   disable_mtu_discovery: true
-- name: hysteria2_urls:2-a1ddda44
+- name: hysteria2_urls:2-9c63ec5a
   type: hysteria
-  server: 137.175.82.44
+  server: 137.175.82.42
   port: 443
   auth-str: dongtaiwang.com
   protocol: udp
@@ -207,9 +207,9 @@ proxies:
   recv-window-conn: 57671680
   recv-window: 230686720
   disable_mtu_discovery: true
-- name: Alvin9999-newpac-20b58836
+- name: https://alvin9999.com-ccf7e3c4
   type: hysteria
-  server: 137.175.82.43
+  server: 137.175.82.42
   port: 20022
   auth-str: dongtaiwang.com
   protocol: udp
@@ -258,10 +258,10 @@ proxies:
   zero-rtt: true
   congestion-controller: bbr
   udp-over-stream: false
-- name: ss_urls:2-f2ddb4bd
+- name: ss_urls:2-2c85dd01
   type: shadowquic
   server: 142.249.37.83
-  port: 1443
+  port: 52889
   username: dongtaiwang.com
   password: dongtaiwang.com
   sni: www.yahoo.com
@@ -306,13 +306,13 @@ proxy-groups:
   - https://alvin9999.com-b14ec053
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - hysteria_urls:1-1ff9d752
-  - hysteria2_urls:1-302f8927
-  - hysteria2_urls:2-a1ddda44
+  - hysteria2_urls:1-23c652f9
+  - hysteria2_urls:2-9c63ec5a
   - hysteria2_urls:3-4ce81303
-  - Alvin9999-newpac-20b58836
+  - https://alvin9999.com-ccf7e3c4
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-3cc8b11c
   - ss_urls:1-a677ff59
-  - ss_urls:2-f2ddb4bd
+  - ss_urls:2-2c85dd01
   - proxy-885a3958
 - name: 自动选择
   type: url-test
@@ -332,13 +332,13 @@ proxy-groups:
   - https://alvin9999.com-b14ec053
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - hysteria_urls:1-1ff9d752
-  - hysteria2_urls:1-302f8927
-  - hysteria2_urls:2-a1ddda44
+  - hysteria2_urls:1-23c652f9
+  - hysteria2_urls:2-9c63ec5a
   - hysteria2_urls:3-4ce81303
-  - Alvin9999-newpac-20b58836
+  - https://alvin9999.com-ccf7e3c4
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-3cc8b11c
   - ss_urls:1-a677ff59
-  - ss_urls:2-f2ddb4bd
+  - ss_urls:2-2c85dd01
   - proxy-885a3958
 rules:
 - DOMAIN,clash.razord.top,DIRECT
