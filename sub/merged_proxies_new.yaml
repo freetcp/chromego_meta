@@ -76,9 +76,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: https://alvin9999.com-bbec0b6d
+- name: https://alvin9999.com-c57a3684
   type: hysteria
-  server: 38.6.222.130
+  server: 38.6.222.131
   port: 11008
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -88,11 +88,11 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: github.com/Alvin9999-newpac/fanqiang-d66ff5e8
+- name: https://alvin9999.com-b49cd7d6
   type: hysteria
-  server: 198.200.57.142
-  port: 22335
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+  server: 38.6.222.132
+  port: 11008
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -145,9 +145,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_urls:1-4875865c
+- name: hysteria_urls:1-315ff371
   type: hysteria2
-  server: 2001:bc8:32d7:17b::3
+  server: 2001:bc8:32d7:17b::4
   port: 22000
   password: dongtaiwang.com
   sni: www.microsoft.com
@@ -155,9 +155,39 @@ proxies:
   up: 11 mbps
   down: 55 mbps
   hop-interval: 30
-- name: hysteria2_urls:1-23c652f9
+- name: hysteria_urls:2-1745dff6
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::5
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  up: 11 mbps
+  down: 55 mbps
+  hop-interval: 30
+- name: hysteria_urls:3-515866a4
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::6
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  up: 11 mbps
+  down: 55 mbps
+  hop-interval: 30
+- name: hysteria_urls:4-79ed05f1
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::7
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  up: 11 mbps
+  down: 55 mbps
+  hop-interval: 30
+- name: hysteria2_urls:1-bd372ddd
   type: hysteria
-  server: 137.175.82.42
+  server: 137.175.82.41
   port: 20022
   auth-str: dongtaiwang.com
   protocol: udp
@@ -203,6 +233,19 @@ proxies:
   recv-window-conn: 57671680
   recv-window: 230686720
   disable_mtu_discovery: true
+- name: https://alvin9999.com-4def52da
+  type: hysteria
+  server: 137.175.82.41
+  port: 20022
+  auth-str: dongtaiwang.com
+  protocol: udp
+  up: 20
+  down: 20
+  sni: bing.com
+  skip-cert-verify: true
+  fast-open: false
+  alpn:
+  - h3
 - name: https://alvin9999.com-ccf7e3c4
   type: hysteria
   server: 137.175.82.42
@@ -280,16 +323,20 @@ proxy-groups:
   - quic1-3aa4cfe5
   - quic2-ad460041
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
-  - https://alvin9999.com-bbec0b6d
-  - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
+  - https://alvin9999.com-c57a3684
+  - https://alvin9999.com-b49cd7d6
   - github.com/Alvin9999-newpac/fanqiang-08554c31
   - github.com/Alvin9999-newpac/fanqiang-5e723059
   - https://alvin9999.com-b14ec053
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
-  - hysteria_urls:1-4875865c
-  - hysteria2_urls:1-23c652f9
+  - hysteria_urls:1-315ff371
+  - hysteria_urls:2-1745dff6
+  - hysteria_urls:3-515866a4
+  - hysteria_urls:4-79ed05f1
+  - hysteria2_urls:1-bd372ddd
   - hysteria2_urls:2-9c63ec5a
   - hysteria2_urls:3-4ce81303
+  - https://alvin9999.com-4def52da
   - https://alvin9999.com-ccf7e3c4
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-b935c487
   - ss_urls:1-a677ff59
@@ -306,16 +353,20 @@ proxy-groups:
   - quic1-3aa4cfe5
   - quic2-ad460041
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
-  - https://alvin9999.com-bbec0b6d
-  - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
+  - https://alvin9999.com-c57a3684
+  - https://alvin9999.com-b49cd7d6
   - github.com/Alvin9999-newpac/fanqiang-08554c31
   - github.com/Alvin9999-newpac/fanqiang-5e723059
   - https://alvin9999.com-b14ec053
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
-  - hysteria_urls:1-4875865c
-  - hysteria2_urls:1-23c652f9
+  - hysteria_urls:1-315ff371
+  - hysteria_urls:2-1745dff6
+  - hysteria_urls:3-515866a4
+  - hysteria_urls:4-79ed05f1
+  - hysteria2_urls:1-bd372ddd
   - hysteria2_urls:2-9c63ec5a
   - hysteria2_urls:3-4ce81303
+  - https://alvin9999.com-4def52da
   - https://alvin9999.com-ccf7e3c4
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-b935c487
   - ss_urls:1-a677ff59
