@@ -301,13 +301,13 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: ss_urls:1-a677ff59
+- name: ss_urls:1-858ef819
   type: shadowquic
-  server: 198.2.214.27
-  port: 22448
+  server: 198.247.0.165
+  port: 25443
   username: dongtaiwang.com
   password: dongtaiwang.com
-  sni: www.bing.com
+  sni: www.yahoo.com
   alpn:
   - h3
   zero-rtt: true
@@ -370,7 +370,7 @@ proxy-groups:
   - https://alvin9999.com-4def52da
   - https://alvin9999.com-ccf7e3c4
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-3cc8b11c
-  - ss_urls:1-a677ff59
+  - ss_urls:1-858ef819
   - ss_urls:2-2c85dd01
   - proxy-885a3958
 - name: 自动选择
@@ -400,7 +400,7 @@ proxy-groups:
   - https://alvin9999.com-4def52da
   - https://alvin9999.com-ccf7e3c4
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-3cc8b11c
-  - ss_urls:1-a677ff59
+  - ss_urls:1-858ef819
   - ss_urls:2-2c85dd01
   - proxy-885a3958
 rules:

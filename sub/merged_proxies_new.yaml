@@ -274,13 +274,13 @@ proxies:
   reality-opts:
     public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
     short-id: d557c6895d014075
-- name: ss_urls:1-a677ff59
+- name: ss_urls:1-858ef819
   type: shadowquic
-  server: 198.2.214.27
-  port: 22448
+  server: 198.247.0.165
+  port: 25443
   username: dongtaiwang.com
   password: dongtaiwang.com
-  sni: www.bing.com
+  sni: www.yahoo.com
   alpn:
   - h3
   zero-rtt: true
@@ -339,7 +339,7 @@ proxy-groups:
   - https://alvin9999.com-4def52da
   - https://alvin9999.com-ccf7e3c4
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-b935c487
-  - ss_urls:1-a677ff59
+  - ss_urls:1-858ef819
   - ss_urls:2-2c85dd01
   - proxy-1f1a8e63
 - name: 自动选择
@@ -369,7 +369,7 @@ proxy-groups:
   - https://alvin9999.com-4def52da
   - https://alvin9999.com-ccf7e3c4
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-b935c487
-  - ss_urls:1-a677ff59
+  - ss_urls:1-858ef819
   - ss_urls:2-2c85dd01
   - proxy-1f1a8e63
 rules:
