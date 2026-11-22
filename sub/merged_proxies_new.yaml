@@ -122,18 +122,36 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: github.com/Alvin9999-newpac/fanqiang-86efa44f
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
+- name: https://alvin9999.com-2a34cf53
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::10
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  udp: true
+- name: https://alvin9999.com-ec3fc093
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::11
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: https://alvin9999.com-763056ce
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::12
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
 - name: hysteria_urls:1-315ff371
   type: hysteria2
   server: 2001:bc8:32d7:17b::4
@@ -316,7 +334,9 @@ proxy-groups:
   - https://alvin9999.com-b49cd7d6
   - https://alvin9999.com-64d0cfa6
   - https://alvin9999.com-b14ec053
-  - github.com/Alvin9999-newpac/fanqiang-86efa44f
+  - https://alvin9999.com-2a34cf53
+  - https://alvin9999.com-ec3fc093
+  - https://alvin9999.com-763056ce
   - hysteria_urls:1-315ff371
   - hysteria_urls:2-1745dff6
   - hysteria_urls:3-515866a4
@@ -345,7 +365,9 @@ proxy-groups:
   - https://alvin9999.com-b49cd7d6
   - https://alvin9999.com-64d0cfa6
   - https://alvin9999.com-b14ec053
-  - github.com/Alvin9999-newpac/fanqiang-86efa44f
+  - https://alvin9999.com-2a34cf53
+  - https://alvin9999.com-ec3fc093
+  - https://alvin9999.com-763056ce
   - hysteria_urls:1-315ff371
   - hysteria_urls:2-1745dff6
   - hysteria_urls:3-515866a4
