@@ -28,13 +28,13 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: mieru1-c1b755f2
+- name: mieru1-6bb0ec27
   type: mieru
-  server: 198.200.57.152
-  port: 33556
+  server: 198.200.57.141
+  port: 55334
   transport: TCP
-  username: Alvin9999-newpac
-  password: github.com/Alvin9999-newpac/fanqiang
+  username: alvin9999.com
+  password: alvin9999.com
 - name: mieru2-c17c422b
   type: mieru
   server: 157.254.223.43
@@ -42,21 +42,21 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: quic1-3aa4cfe5
+- name: quic1-73c7ee93
   type: shadowquic
-  server: 198.2.214.27
-  port: 22448
+  server: 198.247.0.165
+  port: 25443
   username: dongtaiwang.com
   password: dongtaiwang.com
-  sni: www.bing.com
+  sni: www.yahoo.com
   alpn:
   - h3
   zero-rtt: true
   congestion-control: bbr
-- name: quic2-ad460041
+- name: quic2-f1ef941e
   type: shadowquic
   server: 142.249.37.83
-  port: 1443
+  port: 52889
   username: dongtaiwang.com
   password: dongtaiwang.com
   sni: www.yahoo.com
@@ -356,10 +356,10 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - mieru1-c1b755f2
+  - mieru1-6bb0ec27
   - mieru2-c17c422b
-  - quic1-3aa4cfe5
-  - quic2-ad460041
+  - quic1-73c7ee93
+  - quic2-f1ef941e
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
   - https://alvin9999.com-c57a3684
   - https://alvin9999.com-b49cd7d6
@@ -387,10 +387,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - mieru1-c1b755f2
+  - mieru1-6bb0ec27
   - mieru2-c17c422b
-  - quic1-3aa4cfe5
-  - quic2-ad460041
+  - quic1-73c7ee93
+  - quic2-f1ef941e
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
   - https://alvin9999.com-c57a3684
   - https://alvin9999.com-b49cd7d6
