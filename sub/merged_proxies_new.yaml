@@ -100,11 +100,13 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: https://alvin9999.com-64d0cfa6
+- name: https://alvin9999.com-0795df69
   type: hysteria2
   server: 198.247.124.187
   port: 23456
   password: dongtaiwang.com
+  up: 10
+  down: 10
   sni: www.bing.com
   skip-cert-verify: true
   alpn:
@@ -332,7 +334,7 @@ proxy-groups:
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
   - https://alvin9999.com-c57a3684
   - https://alvin9999.com-b49cd7d6
-  - https://alvin9999.com-64d0cfa6
+  - https://alvin9999.com-0795df69
   - https://alvin9999.com-b14ec053
   - https://alvin9999.com-2a34cf53
   - https://alvin9999.com-ec3fc093
@@ -363,7 +365,7 @@ proxy-groups:
   - https://github.com/Alvin9999-newpac/fanqiang-73f3b45a
   - https://alvin9999.com-c57a3684
   - https://alvin9999.com-b49cd7d6
-  - https://alvin9999.com-64d0cfa6
+  - https://alvin9999.com-0795df69
   - https://alvin9999.com-b14ec053
   - https://alvin9999.com-2a34cf53
   - https://alvin9999.com-ec3fc093
